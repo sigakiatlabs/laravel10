@@ -64,3 +64,51 @@ If you discover a security vulnerability within Laravel, please send an e-mail t
 ## License
 
 The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
+
+\ ------------------------
+
+# Ponto de Partida
+
+
+# Preparado o projeto
+mkdir src
+mv app src/App
+
+
+# PHSTAN
+composer require phpstan/phpstan --dev
+vendor/bin/phpstan analyse src tests
+
+
+# php-cs-fixer
+
+composer require friendsofphp/php-cs-fixer  --dev
+vendor/bin/php-cs-fixer fix src
+
+# phpinsights ainda nao compativel
+composer require nunomaduro/phpinsights --dev
+
+
+# laravel-ide-helper
+composer require barryvdh/laravel-ide-helper --dev
+
+# larastan
+composer require nunomaduro/larastan --dev
+
+[//]: # (# phpunit-coverage-check)
+[//]: # (composer require rregeer/phpunit-coverage-check --dev)
+
+
+[//]: # (# cghookers)
+[//]: # (composer require brainmaestro/composer-git-hooks:* --dev)
+
+# codesniffer
+composer require squizlabs/php_codesniffer --dev
+
+
+# conventional-commits
+
+composer require ramsey/conventional-commits --dev
+
+# captain hook
+composer require captainhook/captainhook --dev
