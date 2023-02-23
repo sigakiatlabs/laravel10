@@ -88,6 +88,17 @@ vendor/bin/php-cs-fixer fix src
 # phpinsights ainda nao compativel
 composer require nunomaduro/phpinsights --dev
 
+[//]: # ("phpinsights": [)
+
+[//]: # ("php artisan insights -n")
+
+[//]: # (],)
+
+[//]: # ("fix-phpinsights": [)
+
+[//]: # ("php artisan insights --fix -n")
+
+[//]: # (],)
 
 # laravel-ide-helper
 composer require barryvdh/laravel-ide-helper --dev

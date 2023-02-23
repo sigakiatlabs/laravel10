@@ -1,0 +1,23 @@
+includes:
+    - ./vendor/nunomaduro/larastan/extension.neon
+
+parameters:
+
+    paths:
+        - src
+
+    # The level 9 is the highest level
+    level: 9
+
+    ignoreErrors:
+        - '#PHPDoc tag @var#'
+        - '#Call to an undefined method Tymon\\JWTAuth\\Factory::client\(\)#'
+        - '#Class (.*) has an uninitialized readonly property \$(.*). Assign it in the constructor\.#'
+
+    excludePaths:
+        - ./*/*/FileToBeExcluded.php
+
+    checkMissingIterableValueType: false
+    reportUnmatchedIgnoredErrors: false
+    checkGenericClassInNonGenericObjectType: false
+    checkExplicitMixed: false

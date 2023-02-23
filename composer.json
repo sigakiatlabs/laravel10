@@ -74,12 +74,7 @@
         "phpcs": [
             "./vendor/bin/phpcs --standard=PSR12  src/"
         ],
-        "phpinsights": [
-            "php artisan insights -n"
-        ],
-        "fix-phpinsights": [
-            "php artisan insights --fix -n"
-        ],
+
         "cghooks": "vendor/bin/cghooks",
         "test": [
             "vendor/bin/phpunit"
@@ -90,13 +85,11 @@
             "composer dump",
             "php artisan ide-helper:generate",
             "php artisan ide-helper:meta",
-            "composer fix-phpinsights",
             "composer fix-style",
+            "composer check-style",
             "composer phpstan",
-            "composer phpinsights",
             "composer phpcs",
             "composer phpcbf",
-            "composer check-style",
             "composer test"
         ]
     },
